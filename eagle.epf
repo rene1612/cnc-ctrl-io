@@ -426,12 +426,6 @@ UsedLibrary="C:/Projects/eagle/LBR/web/v-reg-3.lbr"
 UsedLibrary="C:/Projects/eagle/LBR/web/jumper.lbr"
 
 [Win_1]
-Type="Control Panel"
-Loc="645 246 2102 1283"
-State=2
-Number=0
-
-[Win_2]
 Type="Board Editor"
 Loc="972 501 1571 900"
 State=1
@@ -477,7 +471,7 @@ AddLevel=2
 PadsSameType=0
 Layer=16
 
-[Win_3]
+[Win_2]
 Type="Schematic Editor"
 Loc="1165 334 2499 1314"
 State=1
@@ -524,6 +518,12 @@ PadsSameType=0
 Layer=91
 Views=" 1: 276.185 34.5366 352.943 93.0807"
 Sheet=1
+
+[Win_3]
+Type="Control Panel"
+Loc="645 246 2102 1283"
+State=2
+Number=0
 
 [Desktop]
 Screen="5120 1440"

@@ -19878,6 +19878,85 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Capacitor-Wima-MKS4-250v">
+<packages>
+<package name="R7K5B3">
+<wire x1="-5.08" y1="1.524" x2="5.08" y2="1.524" width="0" layer="21"/>
+<wire x1="5.08" y1="1.524" x2="5.08" y2="-1.524" width="0" layer="21"/>
+<wire x1="5.08" y1="-1.524" x2="-5.08" y2="-1.524" width="0" layer="21"/>
+<wire x1="-5.08" y1="-1.524" x2="-5.08" y2="1.524" width="0" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="0.9144" diameter="1.905" shape="octagon"/>
+<pad name="2" x="3.81" y="0" drill="0.9144" diameter="1.905" shape="octagon"/>
+<text x="-2.159" y="0.127" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-2.159" y="-0.889" size="0.8128" layer="27">&gt;VALUE</text>
+</package>
+<package name="R10B4">
+<wire x1="-6.604" y1="2.032" x2="6.604" y2="2.032" width="0" layer="21"/>
+<wire x1="6.604" y1="2.032" x2="6.604" y2="-2.032" width="0" layer="21"/>
+<wire x1="6.604" y1="-2.032" x2="-6.604" y2="-2.032" width="0" layer="21"/>
+<wire x1="-6.604" y1="-2.032" x2="-6.604" y2="2.032" width="0" layer="21"/>
+<pad name="1" x="-5.08" y="0" drill="1.016" diameter="2.159" shape="octagon"/>
+<pad name="2" x="5.08" y="0" drill="1.016" diameter="2.159" shape="octagon"/>
+<text x="-3.175" y="0.127" size="1.016" layer="25">&gt;NAME</text>
+<text x="-3.175" y="-1.143" size="1.016" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="C">
+<wire x1="-2.54" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="1.524" x2="-0.508" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="1.524" x2="0.508" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="1.524" x2="-0.762" y2="1.524" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.524" x2="-1.016" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.524" x2="-0.762" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-1.524" x2="-0.762" y2="1.524" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="1.524" x2="-1.016" y2="1.524" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-1.524" x2="-0.508" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-1.524" x2="0.762" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-1.524" x2="1.016" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.524" x2="0.762" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.524" x2="0.762" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.524" x2="0.508" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-1.524" x2="1.016" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.508" y1="0" x2="0.508" y2="-1.524" width="0.254" layer="94"/>
+<text x="1.778" y="0.381" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.794" y="-1.27" size="0.8636" layer="93">1</text>
+<text x="2.286" y="-1.27" size="0.8636" layer="93">2</text>
+<text x="1.778" y="-1.651" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-1.016" y="1.905" size="0.6096" layer="94">MKS4</text>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="0,01µF">
+<gates>
+<gate name="G$1" symbol="C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R7K5B3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1" package="R10B4">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -20075,6 +20154,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
+<part name="SUPPLY2" library="supply2" deviceset="PE" device=""/>
+<part name="R39" library="rcl" deviceset="R-EU_" device="R0603" value="1M"/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
+<part name="U$1" library="Capacitor-Wima-MKS4-250v" deviceset="0,01µF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20277,6 +20360,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="+3V9" gate="G$1" x="128.27" y="226.06"/>
 <instance part="+3V10" gate="G$1" x="142.24" y="219.71" rot="R90"/>
 <instance part="+3V11" gate="G$1" x="142.24" y="214.63" rot="R90"/>
+<instance part="SUPPLY2" gate="PE" x="15.24" y="201.93" rot="R270"/>
+<instance part="R39" gate="G$1" x="22.86" y="201.93"/>
+<instance part="GND21" gate="1" x="30.48" y="201.93" rot="R90"/>
+<instance part="U$1" gate="G$1" x="22.86" y="196.85"/>
 </instances>
 <busses>
 </busses>
@@ -20464,6 +20551,14 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="IC8" gate="P" pin="GND"/>
 <pinref part="SUPPLY33" gate="GND" pin="GND"/>
 <pinref part="C20" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="R39" gate="G$1" pin="2"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="27.94" y1="201.93" x2="27.94" y2="196.85" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="196.85" x2="25.4" y2="196.85" width="0.1524" layer="91"/>
+<junction x="27.94" y="201.93"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -21579,6 +21674,14 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <segment>
 <pinref part="J1" gate="G$1" pin="A1"/>
 <pinref part="SUPPLY14" gate="PE" pin="PE"/>
+</segment>
+<segment>
+<pinref part="SUPPLY2" gate="PE" pin="PE"/>
+<pinref part="R39" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="196.85" x2="17.78" y2="196.85" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="196.85" x2="17.78" y2="201.93" width="0.1524" layer="91"/>
+<junction x="17.78" y="201.93"/>
 </segment>
 </net>
 <net name="12V" class="0">
